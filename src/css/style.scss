@@ -1,0 +1,59 @@
+$imageBaground: blue;
+$footer: red;
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    padding: 1em;
+    text-align: center;
+    font-size: 2rem; 
+    font-weight: bolder;
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 100%; 
+
+    #image{
+        border: 5px solid black;
+        background: $imageBaground;
+        width: 70%;
+        height: 50em;
+    }
+
+    #left-arrow, #right-arrow{
+        width: 1.5em;
+        height: 1.5em;
+        background: red;
+        border: 2px solid black;
+    } 
+}
+
+
+#slides{
+    margin: .5em;
+    background: grey;
+    width: 4em;
+    height: 2em;
+}
+
+
+footer {
+    margin-top: 5em;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $footer;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
